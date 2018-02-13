@@ -3,7 +3,7 @@
 <head>
     <title>ESP8266 WebSocket Demo</title>
     <style>
-      /*  *{
+       /* *{
             border-style: dotted;
             border-width: 1px; 
         }*/
@@ -42,8 +42,8 @@
             height: 50%;
             min-height: 100px;
             text-align: center;
-            font-size: large;
             cursor: pointer;
+            width: 10%;
         }
         
         .dummy {
@@ -52,21 +52,19 @@
         }
 
         #forward {
-                margin-top: 200px;
+            margin-top: 200px;
         }
 
         #reverse {
         }
         
-
-        .customDiv {
-            margin:3px;
-            min-height:300px;
-            background-color:silver;
-            text-align:center;
-            font-size:large
+        #left {
+            margin-left: 35%;
         }
         
+        #right {
+            margin-left: 9.9%;
+        }
         
         
     </style>
@@ -106,15 +104,16 @@
     <header><h1><center>1030 Design Project Demo</center></h1></header>
     <div class="container">
         <div class="row">
-            <div class="col-md-2">
-                <center><button id="forward" class="button" onmousedown="drive(this);" onmouseup="stp();" ontouchstart="drive(this);" ontouchend="stp();">Forward</button></center>
+            <div class="col-md-4">
+                <center><button id="forward" class="button" onmousedown="drive(this);" onmouseup="stp();" ontouchstart="drive(this);" ontouchend="stp();">FORWARD</button></center>
             </div>
-            <div class="col-md-2">
-                <div class="dummy">
-                </div>
+            <div class="col-md-4">
+                    <button id="left" class="button">LEFT</button>
+                    <button id="right" class="button">RIGHT</button>
             </div>
-            <div class="col-md-2">
-                <center><button id="reverse" class="button" onmousedown="drive(this);" onmouseup="stp();" ontouchstart="drive(this);" ontouchend="stp();">Reverse</button></center> 
+            </div>
+            <div class="col-md-4">
+                <center><button id="reverse" class="button" onmousedown="drive(this);" onmouseup="stp();" ontouchstart="drive(this);" ontouchend="stp();">REVERSE</button></center> 
             </div>
         </div>
     </div>
