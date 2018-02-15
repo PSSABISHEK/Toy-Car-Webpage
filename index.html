@@ -4,57 +4,59 @@
     <title>ESP8266 WebSocket Demo</title>
     <style>
 
-     /* * {
+        /* Adding CSS code */
+            
+     /*     * {
             border-style: dotted;
             border-width: 1px;
         } */
-       
-        body {
-            background-color: #808080;
-            font-family: Arial, Helvetica, Sans-Serif;
-            Color: #000000;
-            height: 100%;
-            overflow:auto;
+        
+            body {
+                background-color: #808080;
+                font-family: Arial, Helvetica, Sans-Serif;
+                Color: #000000;
+                height: 100%;
+                overflow:auto;
         }
 
-        html {
-            height: 200%;
-            margin: 0px;
+            html {
+                height: 200%;
+                margin: 0px;
         }
 
-        .fixed_ele {
-            position: fixed;
-            width: 100%;
+            .fixed_ele {
+                position: fixed;
+                width: 100%;
         }
 
         /* The switch - the box around the slider */
-        .switch {
-            position: absolute;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-            margin-top: 5em;
+            .switch {
+                position: absolute;
+                display: inline-block;
+                width: 60px;
+                height: 34px;
+                margin-top: 5em;
         }
 
-            /* Hide default HTML checkbox */
+         /* Hide default HTML checkbox */
             .switch input {
                 display: none;
             }
 
         /* The slider */
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            -webkit-transition: .4s;
-            transition: .4s;
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+                -webkit-transition: .4s;
+                transition: .4s;
         }
 
-        .slider:before {
+            .slider:before {
                 position: absolute;
                 content: "";
                 height: 26px;
@@ -66,50 +68,50 @@
                 transition: .4s;
         }
 
-        input:checked + .slider {
-            background-color: #2196F3;
+            input:checked + .slider {
+                background-color: #2196F3;
         }
 
-        input:focus + .slider {
-            box-shadow: 0 0 1px #2196F3;
+            input:focus + .slider {
+                box-shadow: 0 0 1px #2196F3;
         }
 
-        input:checked + .slider:before {
-            -webkit-transform: translateX(26px);
-            -ms-transform: translateX(26px);
-            transform: translateX(26px);
+            input:checked + .slider:before {
+                -webkit-transform: translateX(26px);
+                -ms-transform: translateX(26px);
+                transform: translateX(26px);
         }
 
         /* Rounded sliders */
-        .slider.round {
-            border-radius: 34px;
+            .slider.round {
+                border-radius: 34px;
         }
 
             .slider.round:before {
                 border-radius: 50%;
             }
 
-        .button {
-            background-color: #4CAF50; /* Green */
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            padding: 20px 0;
-            -webkit-user-select: none; /* Chrome all / Safari all */
-            -moz-user-select: none; /* Firefox all */
-            -ms-user-select: none; /* IE 10+ */
-            user-select: none; /* Likely future */
-            min-height: 100px;
-            cursor: pointer;
-            width: 30%;
-            border-radius: 6px;
-            border-color: #4CAF50;
-            border-style: solid;
-            -webkit-transition-duration: 0.4s; /* Safari */
-            transition-duration: 0.4s;
+            .button {
+                background-color: #4CAF50; /* Green */
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                padding: 20px 0;
+                -webkit-user-select: none; /* Chrome all / Safari all */
+                -moz-user-select: none; /* Firefox all */
+                -ms-user-select: none; /* IE 10+ */
+                user-select: none; /* Likely future */
+                min-height: 100px;
+                cursor: pointer;
+                width: 30%;
+                border-radius: 6px;
+                border-color: #4CAF50;
+                border-style: solid;
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
         }
 
             .button:hover {
@@ -117,11 +119,11 @@
                 color: white;
             }
 
-        #forward {
-            margin-top: 200px;
+            #forward {
+                margin-top: 200px;
         }
 
-        #reverse {
+            #reverse {
        }
     </style>
     <script>
